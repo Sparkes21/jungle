@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  get 'about/index'
   get 'static_pages/help'
   get 'static_pages/faq'
   get 'static_pages/about'
