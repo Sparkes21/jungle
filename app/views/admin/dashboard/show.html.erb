@@ -1,7 +1,18 @@
 <h1>Admin Dashboard</h1>
 
-<h2>Number of Categories: <%= @category_total %> </h2>
 
-<h2>Number of Products: <%= @products_total%>
-
-
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Number of Categories</th>
+      <th scope="col">Number of Products</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"> <%= @category_total %> </th>
+      <th scope="row"> <%= @products_total%> </th>
+    </tr>
+    </tr>
+  </tbody>
+</table>
