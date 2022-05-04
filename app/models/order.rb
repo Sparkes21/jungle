@@ -1,6 +1,6 @@
 class Order < ApplicationRecord
 
-  belongs_to :user
+  belongs_to :user #optional: true (if it complains about no user.id)
   has_many :line_items
 
   monetize :total_cents, numericality: true
