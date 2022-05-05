@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   get 'static_pages/faq'
   get 'static_pages/about'
   get '/login' => 'sessions#new'
-  get '/login' => 'sessions#create'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
   get '/signup' => 'users#new'
