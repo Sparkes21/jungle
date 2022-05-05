@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    get 'categories/index'
+  end
   get 'about/index'
   get 'static_pages/help'
   get 'static_pages/faq'
